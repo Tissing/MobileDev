@@ -1,44 +1,25 @@
 public class task10 {
     private final static Object lock = new Object();
-    public static int c = 1000;
     public static void main(String[] args){
-        MyThread1 thread1 = new MyThread1();
-        MyThread2 thread2 = new MyThread2();
-        synchronized (lock){
-            thread1.start();
-            thread2.start();
-        }
-//        MyThread1 thread1 = new MyThread1();
-//        MyThread2 thread2 = new MyThread2();
-//        thread1.start();
-//        thread2.start();
+        MyThread thread1 = new MyThread();
+        MyThread thread2 = new MyThread();
+        thread1.start();
+        thread2.start();
+
     }
 
-    public static void take(){
-        c--;
+    public static synchronized void print(Thread thread){
+        for(int i = 0; i < 5; i++){
+            System.out.println(thread.getName() + " " + thread.getId() + " PRINT: " + i);
+        }
     }
 
 }
 
-class MyThread1 extends Thread {
+class MyThread extends Thread {
     @Override
-    public void run() {
-        int taked = 0;
-        while(task10.c > 0){
-            task10.take();
-            taked++;
-        }
-        System.out.println("ID: " + this.getId() + " NAME: " + this.getName() + " PRIORITY: " + this.getPriority() + " OUTPUT: " + taked);
+    public void run(){
+        task10.print(this);
     }
-}
-class MyThread2 extends Thread {
-    @Override
-    public void run() {
-        int taked = 0;
-        while(task10.c > 0){
-            task10.take();
-            taked++;
-        }
-        System.out.println("ID: " + this.getId() + " NAME: " + this.getName() + " PRIORITY: " + this.getPriority() + " OUTPUT: " + taked);
-    }
+
 }
