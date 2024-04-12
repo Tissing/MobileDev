@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class task2 {
     public static void main(String[] args){
-        String path = "materials/Sample.txt";
+        String path = "lab1/lab1/materials/Sample.txt";
         String new_sample_text = "12. Создать игру \"Крестики-нолики\" с возможностью игры против компьютера или другого игрока.";
         String found_text = "алгоритм";
         String replace = "программу";

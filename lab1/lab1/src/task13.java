@@ -6,7 +6,7 @@ import java.io.File;
 public class task13 {
     public static void main(String[] args) throws FileNotFoundException {
 
-        Scanner scanner = new Scanner(new File("C:\\Users\\user\\Desktop\\Visual Studio\\MobileDev\\lab1\\lab1\\materials\\file.txt"));
+        Scanner scanner = new Scanner(new File("lab1/lab1/materials/file.txt"));
         HashMap<String, Integer> words = new HashMap<>();
         HashMap<Character, Integer> chars = new HashMap<>();
         while (scanner.hasNextLine()) {
@@ -55,7 +55,7 @@ public class task13 {
         System.out.println();
         System.out.println("Кол-во каждого символа:");
         System.out.println(chars);
-        System.out.println("Колючевые слова:");
+        System.out.println("Ключевые слова:");
         for(String word: topFive){
             System.out.println(word + " " + words.get(word));
         }

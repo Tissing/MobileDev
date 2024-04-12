@@ -3,7 +3,7 @@ import org.json.simple.parser.*;
 
 import java.io.*;
 
-public class task16 {
+public class task18 {
     public static void main(String[] args) throws IOException, ParseException {
         System.out.println("Чтение из файла lab1/lab1/materials/response.json");
         JSONParser parser = new JSONParser();

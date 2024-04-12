@@ -2,7 +2,7 @@ import java.sql.*;
 
 public class task3 {
     public static void main(String[] args){
-        String url = "jdbc:mysql://localhost";
+        String url = "jdbc:mysql://localhost/database";
         String username = "login";
         String password = "password";
 

@@ -3,10 +3,10 @@ import java.util.Arrays;
 
 public class task14 {
     public static void main(String[] args) throws IOException {
-        Reader reader = new FileReader("C:\\Users\\user\\Desktop\\Visual Studio\\MobileDev\\lab1\\lab1\\materials\\file_for_code.txt");
-        File file = new File("C:\\Users\\user\\Desktop\\Visual Studio\\MobileDev\\lab1\\lab1\\materials\\new_file.txt");
+        Reader reader = new FileReader("lab1/lab1/materials/file_for_code.txt");
+        File file = new File("lab1/lab1/materials/new_file.txt");
         file.createNewFile();
-        FileOutputStream out = new FileOutputStream("C:\\Users\\user\\Desktop\\Visual Studio\\MobileDev\\lab1\\lab1\\materials\\new_file.txt");
+        FileOutputStream out = new FileOutputStream("lab1/lab1/materials/new_file.txt");
         int bt = reader.read();
         int save = bt;
         byte count = 1;
