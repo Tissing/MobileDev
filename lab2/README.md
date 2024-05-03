@@ -33,12 +33,7 @@
  android:src="@drawable/arrow_right"/>
  ```
 
- 
 <h2 align="center">Решение задач</h2>
-
-
-
-<h2 align="center">Вывод</h2>
 
 1. 
 
