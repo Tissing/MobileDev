@@ -51,5 +51,14 @@ if (questionAnswer == userAnswer){
 }
 ```
 
+Вывод организуется также в checkAnswer:
+```java
+if (idQuestion == questionBank.size - 1){
+    var result = Math.round(count.toFloat() / questionBank.size * 100)
+    Toast.makeText(this, "Your result is " + result.toString() + " %", Toast.LENGTH_LONG).show()
+    Toast.makeText(this, count.toString(), Toast.LENGTH_LONG).show()
+}
+```
+
 <h2 align="center">Вывод</h2>
 Дополнил функционал андроид-приложения GeoQuiz.
