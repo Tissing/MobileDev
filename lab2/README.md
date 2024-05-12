@@ -45,8 +45,6 @@ questionTextView.setOnClickListener{
         Toast.makeText(this, R.string.border_quest, Toast.LENGTH_SHORT).show()
     }
     setQuestion(currentIndex)
-    falseButton.isEnabled = true
-    trueButton.isEnabled = true
 }
 ```
 
